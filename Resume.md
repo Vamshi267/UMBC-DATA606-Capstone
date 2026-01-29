@@ -30,7 +30,7 @@ CGPA: 8.8/10
 - Data: Data cleaning, EDA, feature engineering, model evaluation  
 - ML: Regression, classification, train/test split, cross-validation  
 - Libraries: Pandas, NumPy, Matplotlib, Scikit-learn  
-- Tools: Git/GitHub, Excel, Power BI (if you use it)
+- Tools: Git/GitHub, Excel, Power BI
 
 ---
 
@@ -43,7 +43,7 @@ CGPA: 8.8/10
 
 ### Intrusion Detection System for IoT Malware (Deep Learning)
 - Developed an intrusion detection system using an **LSTM** model to classify malware behaviors from network traffic.
-- Published research work: *Securing the IoT Ecosystem: A Multitask Deep Learning Framework for Malware Detection via Behavioral Traffic Analysis.*
+- Published research work: Securing the IoT Ecosystem: A Multitask Deep Learning Framework for Malware Detection via Behavioral Traffic Analysis.
 - **Tech:** Python, Deep Learning, LSTM
 
 ### Airfare Price Prediction (Machine Learning)
@@ -60,9 +60,9 @@ Oasis Infobyte - Web Development Internship (03/2024 - 04/2024)
 ---
 
 ## Certifications
- **Google Data Analytics Certificate** 
- **Python, C, Java certificates by Hackerrank**
- **Algorithms certificate from Princeton Universtity by Coursera**
+ - **Google Data Analytics Certificate** 
+ - **Python, C, Java certificates by Hackerrank**
+ - **Algorithms certificate from Princeton Universtity by Coursera**
 
 ---
 
