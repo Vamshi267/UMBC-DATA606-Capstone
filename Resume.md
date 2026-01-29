@@ -54,15 +54,15 @@ CGPA: 8.8/10
 ---
 
 ## Experience
-Oasis Infobyte - Web Development Internship 
-*03/2024 - 04/2024 *  
+Oasis Infobyte - Web Development Internship (03/2024 - 04/2024)
 - Worked on web page development by using HTML and CSS.
 - Developed useful computations by using JavaScript like temperature converter.
 ---
 
 ## Certifications
-- Add your real certifications here (Coursera / Google / IBM / etc.)
-- Example: **Google Data Analytics Certificate** (if you actually have it)
+ **Google Data Analytics Certificate** 
+ **Python, C, Java certificates by Hackerrank**
+ **Algorithms certificate from Princeton Universtity by Coursera**
 
 ---
 
