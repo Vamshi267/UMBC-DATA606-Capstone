@@ -1,4 +1,4 @@
-# Rajavamshi Goud
+# Raja Vamshi Goud Amaragoni
 
 ![Headshot](docs/images/headshot.jpg)
 
