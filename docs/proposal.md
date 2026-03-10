@@ -188,10 +188,16 @@ Summary statistics were generated to examine the distribution and variability of
 Visualizations were created using **Plotly Express** to explore relationships between salary and the selected features. The analysis included:
 
 * distribution of the target variable (salary)
+ <img width="1351" height="438" alt="Screenshot (122)" src="https://github.com/user-attachments/assets/e27f1ca7-8c03-4634-b16f-957b6bba1a96" />
+
 * comparison of salaries across experience levels
+  <img width="1348" height="428" alt="Screenshot (125)" src="https://github.com/user-attachments/assets/7cc84041-ae39-4016-9be7-cdcd3b6bbc00" />
+
 * comparison of salaries by work arrangement (remote, hybrid, onsite)
 * relationship between years of experience and salary
 * frequency of job titles within the dataset
+  <img width="1351" height="426" alt="Screenshot (124)" src="https://github.com/user-attachments/assets/8c52af9c-5d56-4455-8c15-359fd93079a1" />
+
 
 These visualizations helped identify patterns and potential relationships between job characteristics and salary.
 
