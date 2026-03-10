@@ -72,7 +72,7 @@ To answer the research questions, two real-world datasets are used in this proje
 
 ---
 
-## Dataset A – Salary Prediction Dataset
+## Dataset
 
 ### Data Source
 
