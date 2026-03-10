@@ -113,7 +113,7 @@ This dataset is used for:
 
 Each row in this dataset represents:
 
-👉 **One AI/Data Science related job posting with salary information**
+ **One AI/Data Science related job posting with salary information**
 
 ---
 
@@ -165,106 +165,10 @@ These features will be used to predict the target variable **salary_avg_usd**.
 
 ---
 
----
-
-## Dataset B – Skill Demand and Trend Analysis Dataset
-
-### Data Source
-
-The second dataset used in this project is **skills_dataset.csv**, which contains structured information about skills extracted from real job postings.
-
----
-
-### Purpose of This Dataset
-
-This dataset is used exclusively for:
-
-* Analyzing global job market trends
-* Identifying the most demanded technical skills
-* Understanding which technologies and skill categories are most important
-
-This dataset is not salary-based, which makes it ideal for unbiased trend analysis.
-
----
-
-### Data Size
-
-* File size: Approximately **8 MB**
-
----
-
-### Data Shape
-
-* Number of rows: **224,605**
-* Number of columns: **4**
-
----
-
-### Time Period
-
-* The dataset reflects skill requirements from recent AI and Data Science job postings (mainly 2021–2024).
-
----
-
-### What Does Each Row Represent?
-
-Each row in this dataset represents:
-
-**One specific skill requirement from a job posting**
-
----
-
-### Data Dictionary
-
-| Column Name    | Data Type | Definition                         | Potential Values                 |
-| -------------- | --------- | ---------------------------------- | -------------------------------- |
-| job_id         | integer   | Unique identifier of a job posting | Numeric ID                       |
-| skill          | string    | Name of a required skill           | Python, SQL, TensorFlow, etc.    |
-| skill_category | string    | Category of the skill              | Programming, AI, Data Analysis   |
-| skill_level    | string    | Level of expertise required        | Beginner, Intermediate, Advanced |
-
----
-
-### Target Variable
-
-This dataset is used only for analytics and does not involve machine learning prediction.
-Therefore, it does **not** have a target variable.
-
----
-
-### How This Dataset Will Be Used
-
-This dataset will be used to answer questions such as:
-
-* What are the top 20 most demanded skills globally?
-* Which skill categories are most important?
-* What level of expertise is most commonly required?
-* How do skill demands vary across job roles?
-
----
-
-# Data Usage Strategy
-
-Each dataset is used for a specific and appropriate purpose:
-
-| Task                                        | Dataset Used      |
-| ------------------------------------------- | ----------------- |
-| Salary prediction and compensation analysis | jobs_dataset.csv  |
-| Job market trends and skill demand analysis | skills_dataset.csv|
-
-This approach ensures that:
-
-* Salary prediction is performed using structured salary data
-* Trend analysis is performed using skill-based data
-* Currency and regional salary biases do not affect trend analysis
-
----
-
 # Summary
 
 In this project:
 
-* **Dataset A (jobs_dataset.csv)** is used for machine learning and salary prediction.
-* **Dataset B (skills_dataset.csv)** is used for understanding job market trends and skill demand.
+* **Dataset A (jobs_dataset.csv)** is used for machine learning and salary prediction and is used for understanding job market trends and skill demand.
 
 Together, these datasets provide a strong foundation for answering the research questions and completing the objectives of the capstone project.
