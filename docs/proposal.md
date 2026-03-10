@@ -165,6 +165,46 @@ These features will be used to predict the target variable **salary_avg_usd**.
 
 ---
 
+# 4. Exploratory Data Analysis (EDA)
+
+Exploratory Data Analysis was conducted to understand the characteristics of the dataset and examine relationships between the selected features and the target variable **salary_avg_usd**. The analysis focused on the variables chosen for modeling, and unnecessary columns were removed to simplify the dataset.
+
+## Data Preparation
+
+A new target variable, **salary_avg_usd**, was created by calculating the average of the minimum and maximum salary values provided in the dataset. This variable represents the estimated salary for each job posting and was used as the prediction target for the machine learning models.
+
+Only the relevant variables used for modeling were retained, including job title, country, experience level, minimum experience years, remote work type, company size, posted year, and the target variable.
+
+## Data Cleansing
+
+The dataset was examined for common data quality issues. No missing values or duplicate rows were found in the selected variables. Therefore, no additional data cleaning steps were required.
+
+## Summary Statistics
+
+Summary statistics were generated to examine the distribution and variability of the numerical variables, particularly salary and experience. These statistics provided an initial understanding of salary ranges and variation across job postings.
+
+## Visual Analysis
+
+Visualizations were created using **Plotly Express** to explore relationships between salary and the selected features. The analysis included:
+
+* distribution of the target variable (salary)
+* comparison of salaries across experience levels
+* comparison of salaries by work arrangement (remote, hybrid, onsite)
+* relationship between years of experience and salary
+* frequency of job titles within the dataset
+
+These visualizations helped identify patterns and potential relationships between job characteristics and salary.
+
+## Dataset Structure
+
+The dataset follows a tidy structure in which each row represents a single job posting and each column represents a specific attribute of that job. This structure makes the dataset suitable for statistical analysis and machine learning modeling.
+
+## Outcome of EDA
+
+The exploratory analysis confirmed that the dataset is clean and well structured. The relationships observed between salary and job characteristics indicate that the selected features are relevant for predicting salary. The prepared dataset was then used for training and evaluating machine learning models.
+
+---
+
 # Summary
 
 In this project:
