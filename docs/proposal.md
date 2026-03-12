@@ -1,157 +1,169 @@
 # 1. Title and Author
 
-### **Project Title**
+## Project Title
 
 **Global AI and Data Science Job Market Analysis and Salary Prediction**
 
-Prepared for UMBC Data Science Master Degree Capstone by Dr Chaojie (Jay) Wang
+Prepared for the **UMBC Master’s Program in Data Science**
+Capstone Project under the supervision of **Dr. Chaojie (Jay) Wang**
 
-**Author Name:**
-Raja Vamshi Goud Amaragoni
+Author: **Raja Vamshi Goud Amaragoni**
 
-**GitHub Repository Link:**
-https://github.com/Vamshi267/UMBC-DATA606-Capstone
+GitHub Repository:
+[https://github.com/Vamshi267/UMBC-DATA606-Capstone](https://github.com/Vamshi267/UMBC-DATA606-Capstone)
 
-**LinkedIn Profile Link:**
-https://www.linkedin.com/in/rajavamshi-goud-amaragoni-93a105345
+LinkedIn Profile:
+[https://www.linkedin.com/in/rajavamshi-goud-amaragoni-93a105345](https://www.linkedin.com/in/rajavamshi-goud-amaragoni-93a105345)
 
-**PowerPoint Presentation Link:**
+PowerPoint Presentation:
 [To be added after presentation is created]
 
-**YouTube Video Link:**
+Project Demonstration Video:
 [To be added after project demo video is recorded]
 
 ---
 
 # 2. Background
 
-### What is it about?
+## Project Overview
 
-This project is about analyzing the global job market for Artificial Intelligence, Data Science, and related technology roles, and building a machine learning system to predict salaries based on job-related factors.
+This project analyzes the **global job market for Artificial Intelligence (AI), Machine Learning, and Data Science roles** and develops a **machine learning model to predict salaries based on job-related characteristics**.
 
-The project has two main goals:
+The rapid growth of AI and data-driven technologies has significantly increased demand for skilled professionals in areas such as data science, machine learning engineering, and AI development. However, understanding salary trends and the factors influencing compensation in these fields can be difficult due to the large and scattered nature of job market information.
 
-1. To understand current job market trends in AI and Data Science by analyzing the demand for different skills and technologies.
-2. To build a predictive model that can estimate the expected salary of a job based on features such as job title, experience level, location, and company size.
+This project aims to address this challenge by analyzing a large dataset of AI and data science job postings and identifying patterns related to salaries, experience levels, job roles, and work arrangements.
+
+The project has two primary objectives:
+
+1. **Job Market Analysis** – Explore the demand for AI and data science roles and identify trends in required skills, experience levels, and job characteristics.
+2. **Salary Prediction** – Build machine learning models capable of predicting expected salary based on job-related features such as job title, experience level, location, and company size.
 
 ---
 
-### Why does it matter?
+## Motivation
 
-The fields of AI, Data Science, and Machine Learning are growing very fast across the world. Many students and professionals want to enter these fields, but it is often difficult to understand:
+The fields of **Artificial Intelligence, Data Science, and Machine Learning** are expanding rapidly worldwide. Students, job seekers, and professionals often want to understand:
 
-* Which skills are most important to learn
-* What salary they can expect
-* How experience affects pay
-* Which job roles are in high demand
+* Which technical skills are most valuable in the job market
+* What salary ranges can be expected for different roles
+* How experience level affects salary
+* Which job roles are most in demand globally
 
-Information about jobs and salaries is usually scattered across many websites. This project matters because it brings real job market data together and provides data-driven answers to these important questions.
+However, this information is often scattered across many job platforms and websites, making it difficult to analyze systematically.
 
-The project can help:
+This project consolidates job market data into a single dataset and uses data analysis and machine learning techniques to provide **data-driven insights into the AI and data science job market**.
 
-* Students choose the right skills to learn
+The findings from this project may help:
+
+* Students identify important skills to learn
 * Job seekers understand realistic salary expectations
-* Employers understand market trends
-* Anyone interested in AI/Data Science careers
+* Employers understand compensation trends
+* Researchers study global technology job market trends
 
 ---
 
-### Research Questions
+## Research Questions
 
-1. What factors most influence salaries in AI and Data Science jobs?
+This project aims to answer the following research questions:
+
+1. What factors most strongly influence salaries in AI and data science jobs?
 2. How do experience level, job title, and location affect salary?
-3. Which technical skills are most in demand globally?
-4. What are the most popular skill categories in the AI job market?
+3. Which technical roles appear most frequently in the AI and data science job market?
+4. What job characteristics are associated with higher salaries?
 5. Can machine learning models accurately predict salary based on job-related features?
 
 ---
 
 # 3. Data
 
-To answer the research questions, two real-world datasets are used in this project. Each dataset is used for a specific purpose.
+To address the research questions, this project uses a **real-world dataset containing global job postings for AI and Data Science roles**.
 
 ---
 
-## Dataset
+## Dataset Source
 
-### Data Source
-
-The first dataset used in this project is **jobs_dataset.csv**, a structured dataset containing global AI and Data Science job information with salary details.
-
-### Purpose of This Dataset
-
-This dataset is used for:
-
-* Salary prediction using machine learning
-* Analyzing factors that affect compensation
-* Understanding salary differences across roles and locations
+The primary dataset used in this project is **jobs_dataset.csv**, which contains structured information about AI and data science job postings, including salary ranges and job characteristics.
 
 ---
 
-### Data Size
+## Purpose of the Dataset
 
-* File size: Approximately **5 MB**
-* Format: CSV file
+This dataset is used for two main purposes:
 
----
+1. **Exploratory Analysis of the Job Market**
 
-### Data Shape
+   * Understanding salary distributions
+   * Identifying relationships between job features and compensation
+   * Exploring demand for different job roles and experience levels
 
-* Number of rows: **50,000**
-* Number of columns: **14**
+2. **Machine Learning Salary Prediction**
 
----
-
-### Time Period
-
-* The data contains job postings from recent years (primarily from 2021–2024).
-* The column **posted_year** provides the time information for each job record.
+   * Building models to estimate salary based on job characteristics
 
 ---
 
-### What Does Each Row Represent?
+## Dataset Size
 
-Each row in this dataset represents:
-
- **One AI/Data Science related job posting with salary information**
-
----
-
-### Data Dictionary
-
-| Column Name          | Data Type | Definition                           | Potential Values                               |
-| -------------------- | --------- | ------------------------------------ | ---------------------------------------------- |
-| job_title            | string    | Title of the job position            | Data Scientist, ML Engineer, AI Engineer, etc. |
-| country              | string    | Country where the job is located     | USA, India, UK, etc.                           |
-| city                 | string    | City of job location                 | New York, London, etc.                         |
-| experience_level     | string    | Level of experience required         | Entry, Mid, Senior                             |
-| min_experience_years | integer   | Minimum years of experience required | 0–15                                           |
-| remote_type          | string    | Type of work                         | Remote, Hybrid, Onsite                         |
-| company_size         | string    | Size of the company                  | Small, Medium, Large                           |
-| salary_min_usd       | numeric   | Minimum salary in USD                | Numeric value                                  |
-| salary_max_usd       | numeric   | Maximum salary in USD                | Numeric value                                  |
-| posted_year          | integer   | Year the job was posted              | 2021, 2022, 2023                               |
+* File format: CSV
+* File size: approximately **5 MB**
+* Number of rows: approximately **50,000 job postings**
+* Number of columns: **14 variables**
 
 ---
 
-### Target Variable for Machine Learning
+## Time Period
 
-This dataset does not have a single salary column, but it contains:
+The dataset includes job postings primarily from **2021 to 2024**.
 
-* salary_min_usd
-* salary_max_usd
-
-To create a proper label for machine learning, the following target variable will be calculated:
-
-**salary_avg_usd = (salary_min_usd + salary_max_usd) / 2**
-
-This calculated column will be the **target/label variable** for salary prediction.
+The column **posted_year** indicates the year in which each job posting was listed.
 
 ---
 
-### Features / Predictors for ML Models
+## Data Representation
 
-The following columns may be selected as input features for the machine learning models:
+Each row in the dataset represents **a single AI or data science job posting**.
+
+Each column represents a specific attribute describing the job, such as job title, location, experience requirements, and salary range.
+
+---
+
+## Data Dictionary
+
+| Column Name          | Data Type | Description                          | Example Values              |
+| -------------------- | --------- | ------------------------------------ | --------------------------- |
+| job_title            | string    | Job title of the position            | Data Scientist, ML Engineer |
+| country              | string    | Country where the job is located     | USA, India, UK              |
+| city                 | string    | City of the job location             | New York, London            |
+| experience_level     | string    | Required experience level            | Entry, Mid, Senior          |
+| min_experience_years | integer   | Minimum years of experience required | 0–15                        |
+| remote_type          | string    | Work arrangement                     | Remote, Hybrid, Onsite      |
+| company_size         | string    | Size of the company                  | Small, Medium, Large        |
+| salary_min_usd       | numeric   | Minimum salary offered               | Numeric                     |
+| salary_max_usd       | numeric   | Maximum salary offered               | Numeric                     |
+| posted_year          | integer   | Year the job was posted              | 2021–2024                   |
+
+---
+
+## Target Variable for Machine Learning
+
+The dataset provides a salary range rather than a single salary value. Specifically, it includes:
+
+* **salary_min_usd**
+* **salary_max_usd**
+
+To create a suitable target variable for machine learning, an estimated salary value was calculated as the average of these two values:
+
+```
+salary_avg_usd = (salary_min_usd + salary_max_usd) / 2
+```
+
+This new variable, **salary_avg_usd**, serves as the target variable for the salary prediction models.
+
+---
+
+## Features Used for Modeling
+
+The following features were selected as potential predictors for the machine learning models:
 
 * job_title
 * country
@@ -161,7 +173,7 @@ The following columns may be selected as input features for the machine learning
 * company_size
 * posted_year
 
-These features will be used to predict the target variable **salary_avg_usd**.
+These variables capture key aspects of job characteristics that may influence salary levels.
 
 ---
 
@@ -170,33 +182,6 @@ These features will be used to predict the target variable **salary_avg_usd**.
 Exploratory Data Analysis (EDA) was conducted to understand the structure and characteristics of the dataset and to examine the relationships between selected job attributes and the target variable **salary_avg_usd**. The primary goal of this analysis was to explore patterns in the data, identify potential relationships between variables, and confirm that the dataset was suitable for machine learning modeling.
 
 The analysis focused only on the variables selected for modeling. Columns that were not relevant to the prediction task were removed in order to simplify the dataset and improve computational efficiency.
-
----
-
-## Data Preparation
-
-A new target variable, **salary_avg_usd**, was created to represent the estimated salary associated with each job posting. This variable was calculated by taking the average of the minimum salary and maximum salary values provided in the dataset.
-
-The following formula was used:
-
-```
-salary_avg_usd = (salary_min_usd + salary_max_usd) / 2
-```
-
-This derived variable was used as the prediction target for the machine learning models.
-
-After creating the target variable, only the relevant features required for modeling were retained. These include:
-
-* job_title
-* company_location (country)
-* experience_level
-* minimum_experience_years
-* remote_ratio / work arrangement
-* company_size
-* posted_year
-* salary_avg_usd (target variable)
-
-Reducing the dataset to these variables helped simplify the analysis and ensured that only meaningful features were included in the modeling process.
 
 ---
 
