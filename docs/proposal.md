@@ -167,47 +167,141 @@ These features will be used to predict the target variable **salary_avg_usd**.
 
 # 4. Exploratory Data Analysis (EDA)
 
-Exploratory Data Analysis was conducted to understand the characteristics of the dataset and examine relationships between the selected features and the target variable **salary_avg_usd**. The analysis focused on the variables chosen for modeling, and unnecessary columns were removed to simplify the dataset.
+Your section is already good, but for grading purposes it should be **more structured, clearer, and slightly more detailed**. Professors usually expect:
+
+* clear subsections
+* explanation of process
+* description of visualizations
+* interpretation of results
+
+I rewrote your section while **keeping your ideas but improving clarity, structure, and academic tone**.
+
+---
+
+# 4. Exploratory Data Analysis (EDA)
+
+Exploratory Data Analysis (EDA) was conducted to understand the structure and characteristics of the dataset and to examine the relationships between selected job attributes and the target variable **salary_avg_usd**. The primary goal of this analysis was to explore patterns in the data, identify potential relationships between variables, and confirm that the dataset was suitable for machine learning modeling.
+
+The analysis focused only on the variables selected for modeling. Columns that were not relevant to the prediction task were removed in order to simplify the dataset and improve computational efficiency.
+
+---
 
 ## Data Preparation
 
-A new target variable, **salary_avg_usd**, was created by calculating the average of the minimum and maximum salary values provided in the dataset. This variable represents the estimated salary for each job posting and was used as the prediction target for the machine learning models.
+A new target variable, **salary_avg_usd**, was created to represent the estimated salary associated with each job posting. This variable was calculated by taking the average of the minimum salary and maximum salary values provided in the dataset.
 
-Only the relevant variables used for modeling were retained, including job title, country, experience level, minimum experience years, remote work type, company size, posted year, and the target variable.
+The following formula was used:
+
+```
+salary_avg_usd = (salary_min_usd + salary_max_usd) / 2
+```
+
+This derived variable was used as the prediction target for the machine learning models.
+
+After creating the target variable, only the relevant features required for modeling were retained. These include:
+
+* job_title
+* company_location (country)
+* experience_level
+* minimum_experience_years
+* remote_ratio / work arrangement
+* company_size
+* posted_year
+* salary_avg_usd (target variable)
+
+Reducing the dataset to these variables helped simplify the analysis and ensured that only meaningful features were included in the modeling process.
+
+---
 
 ## Data Cleansing
 
-The dataset was examined for common data quality issues. No missing values or duplicate rows were found in the selected variables. Therefore, no additional data cleaning steps were required.
+The dataset was examined for common data quality issues, including missing values and duplicate records.
+
+The following checks were performed:
+
+* Detection of missing values across all selected variables
+* Verification of duplicate rows
+* Inspection of data types for consistency
+
+The analysis indicated that there were **no missing values or duplicate rows in the selected features**. As a result, no additional data cleaning steps such as imputation or record removal were required.
+
+Ensuring that the dataset is clean and consistent is an important step before performing statistical analysis or training machine learning models.
+
+---
 
 ## Summary Statistics
 
-Summary statistics were generated to examine the distribution and variability of the numerical variables, particularly salary and experience. These statistics provided an initial understanding of salary ranges and variation across job postings.
+Summary statistics were calculated to examine the distribution and variability of the numerical variables in the dataset, particularly salary and years of experience.
+
+These statistics include:
+
+* mean salary
+* median salary
+* minimum and maximum values
+* standard deviation
+
+The summary statistics provided an initial understanding of the salary range and the variation across job postings. This step also helped identify whether extreme values or unusual distributions were present in the dataset.
+
+---
 
 ## Visual Analysis
 
-Visualizations were created using **Plotly Express** to explore relationships between salary and the selected features. The analysis included:
+Several visualizations were created using **Plotly Express** to explore relationships between the target variable and the selected features. Visual analysis helps identify patterns, trends, and potential correlations in the data.
 
-* distribution of the target variable (salary)
- <img width="1351" height="438" alt="Screenshot (122)" src="https://github.com/user-attachments/assets/e27f1ca7-8c03-4634-b16f-957b6bba1a96" />
+The following visualizations were produced:
 
-* comparison of salaries across experience levels
-  <img width="1348" height="428" alt="Screenshot (125)" src="https://github.com/user-attachments/assets/7cc84041-ae39-4016-9be7-cdcd3b6bbc00" />
+### Salary Distribution
 
-* comparison of salaries by work arrangement (remote, hybrid, onsite)
-* relationship between years of experience and salary
-* frequency of job titles within the dataset
-  <img width="1351" height="426" alt="Screenshot (124)" src="https://github.com/user-attachments/assets/8c52af9c-5d56-4455-8c15-359fd93079a1" />
+A histogram of **salary_avg_usd** was created to examine the distribution of salaries in the dataset. This visualization helps identify the general salary range and the presence of any skewness or outliers.
 
+<img width="1351" height="438" alt="Screenshot (122)" src="https://github.com/user-attachments/assets/e27f1ca7-8c03-4634-b16f-957b6bba1a96" />
 
-These visualizations helped identify patterns and potential relationships between job characteristics and salary.
+---
+
+### Salary by Experience Level
+
+A comparison of salaries across different **experience levels** was performed using box plots. This visualization helps illustrate how salary changes with increasing experience.
+
+<img width="1348" height="428" alt="Screenshot (125)" src="https://github.com/user-attachments/assets/7cc84041-ae39-4016-9be7-cdcd3b6bbc00" />
+
+---
+
+### Salary by Work Arrangement
+
+A visualization was created to compare salaries across different work arrangements such as **remote, hybrid, and onsite positions**. This helps evaluate whether remote work influences salary levels.
+
+---
+
+### Relationship Between Experience and Salary
+
+A scatter plot was used to analyze the relationship between **minimum experience years** and **salary_avg_usd**. This visualization helps identify whether salary tends to increase with additional experience.
+
+---
+
+### Frequency of Job Titles
+
+A bar chart was created to examine the frequency distribution of job titles in the dataset. This helps identify the most common roles included in the data.
+
+<img width="1351" height="426" alt="Screenshot (124)" src="https://github.com/user-attachments/assets/8c52af9c-5d56-4455-8c15-359fd93079a1" />
+
+---
 
 ## Dataset Structure
 
-The dataset follows a tidy structure in which each row represents a single job posting and each column represents a specific attribute of that job. This structure makes the dataset suitable for statistical analysis and machine learning modeling.
+The dataset follows a **tidy data structure**, where:
 
-## Outcome of EDA
+* each row represents a single job posting
+* each column represents a specific attribute of that job
 
-The exploratory analysis confirmed that the dataset is clean and well structured. The relationships observed between salary and job characteristics indicate that the selected features are relevant for predicting salary. The prepared dataset was then used for training and evaluating machine learning models.
+This structured format makes the dataset suitable for statistical analysis, visualization, and machine learning modeling.
+
+---
+
+## Outcome of the Exploratory Data Analysis
+
+The exploratory analysis confirmed that the dataset is clean, well structured, and suitable for predictive modeling. The relationships observed between salary and job-related attributes such as experience level, job role, and work arrangement suggest that these features are informative predictors of salary.
+
+The insights obtained during EDA guided the selection of relevant features for the machine learning models. The prepared dataset was then used for training and evaluating multiple predictive models to estimate salary based on job characteristics.
 
 ---
 
