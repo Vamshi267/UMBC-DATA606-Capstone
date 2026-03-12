@@ -281,6 +281,6 @@ The insights obtained during EDA guided the selection of relevant features for t
 
 In this project:
 
-* **Dataset A (jobs_dataset.csv)** is used for machine learning and salary prediction and is used for understanding job market trends and skill demand.
+* **Dataset (jobs_dataset.csv)** is used for machine learning and salary prediction and is used for understanding job market trends and skill demand.
 
-Together, these datasets provide a strong foundation for answering the research questions and completing the objectives of the capstone project.
+This dataset provide a strong foundation for answering the research questions and completing the objectives of the capstone project.
