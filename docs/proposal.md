@@ -167,19 +167,6 @@ These features will be used to predict the target variable **salary_avg_usd**.
 
 # 4. Exploratory Data Analysis (EDA)
 
-Your section is already good, but for grading purposes it should be **more structured, clearer, and slightly more detailed**. Professors usually expect:
-
-* clear subsections
-* explanation of process
-* description of visualizations
-* interpretation of results
-
-I rewrote your section while **keeping your ideas but improving clarity, structure, and academic tone**.
-
----
-
-# 4. Exploratory Data Analysis (EDA)
-
 Exploratory Data Analysis (EDA) was conducted to understand the structure and characteristics of the dataset and to examine the relationships between selected job attributes and the target variable **salary_avg_usd**. The primary goal of this analysis was to explore patterns in the data, identify potential relationships between variables, and confirm that the dataset was suitable for machine learning modeling.
 
 The analysis focused only on the variables selected for modeling. Columns that were not relevant to the prediction task were removed in order to simplify the dataset and improve computational efficiency.
