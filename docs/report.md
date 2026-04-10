@@ -9,8 +9,11 @@
 **Author Name:** Raja Vamshi Goud Amaragoni
 
 **GitHub Repository:** *To be added*
+
 **LinkedIn Profile:** *To be added*
+
 **PowerPoint Presentation:** *To be added*
+
 **YouTube Video:** *To be added*
 
 ---
@@ -147,6 +150,7 @@ Exploratory Data Analysis (EDA) was conducted using Jupyter Notebook to understa
 Several visualizations were used to explore relationships:
 
 * Salary vs experience level → shows clear increase in salary with seniority
+
 * Salary vs years of experience → strong positive relationship
 * Salary vs remote type → indicates differences in work arrangements
 * Salary by country → highlights geographic variation
