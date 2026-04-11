@@ -203,10 +203,6 @@ The dataset is **tidy**:
 * Each column represents a feature
 * Target variable is clearly defined
 
-## **Additional Data Sources**
-
-No additional datasets were used in this project.
-
 ---
 
 # **5. Model Training**
