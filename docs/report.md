@@ -218,14 +218,20 @@ A sequential ensemble model that improves predictions by correcting previous err
 ### **MAE**
 
 Measures average prediction error in USD.
+<img width="1378" height="449" alt="Mean Absolute Error" src="https://github.com/user-attachments/assets/e04a6e49-3523-4235-a922-e773b243305d" />
+
 
 ### **RMSE**
 
 Penalizes larger errors more heavily.
+<img width="1366" height="463" alt="RMSE" src="https://github.com/user-attachments/assets/e4b37797-34ed-49c8-8531-b35c3ed87820" />
+
 
 ### **R² Score**
 
 Measures how well the model explains variance.
+<img width="1374" height="496" alt="R2 score" src="https://github.com/user-attachments/assets/572259a4-10fa-46fa-8322-4fd8ae3a8f45" />
+
 
 ---
 
