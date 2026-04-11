@@ -8,7 +8,7 @@
 
 **Author Name:** Raja Vamshi Goud Amaragoni
 
-**GitHub Repository:** *To be added*
+**GitHub Repository:** https://github.com/Vamshi267/UMBC-DATA606-Capstone/tree/master
 
 **LinkedIn Profile:** *To be added*
 
