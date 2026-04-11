@@ -49,7 +49,7 @@ This project aims to build a salary prediction model using machine learning tech
 
 ## **Data Source**
 
-The dataset used in this project was obtained from **Kaggle** *(exact dataset link to be added)*. It contains structured job-related data for AI and Data Science roles across multiple countries.
+The dataset used in this project was obtained from **Kaggle**. It contains structured job-related data for AI and Data Science roles across multiple countries.
 
 ## **Data Size**
 
@@ -63,7 +63,7 @@ The dataset used in this project was obtained from **Kaggle** *(exact dataset li
 
 ## **Time Period**
 
-* The dataset includes job postings from approximately **2020 to 2024**, as indicated by the `posted_year` column.
+* The dataset includes job postings from approximately **2021 to 2024**, as indicated by the `posted_year` column.
 
 ## **Unit of Observation**
 
