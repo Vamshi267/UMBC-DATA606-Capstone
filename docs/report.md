@@ -145,15 +145,48 @@ Exploratory Data Analysis (EDA) was conducted using Jupyter Notebook to understa
 * Converted categorical variables using **one-hot encoding**
 * Ensured all features are numeric for model compatibility
 
-## **Visual Analysis**
 
-Several visualizations were used to explore relationships:
+* ## Visual Analysis
 
-* Salary vs experience level → shows clear increase in salary with seniority
+Several visualizations were created using **Plotly Express** to explore relationships between the target variable and the selected features. Visual analysis helps identify patterns, trends, and potential correlations in the data.
 
-* Salary vs years of experience → strong positive relationship
-* Salary vs remote type → indicates differences in work arrangements
-* Salary by country → highlights geographic variation
+The following visualizations were produced:
+
+### Salary Distribution
+
+A histogram of **salary_avg_usd** was created to examine the distribution of salaries in the dataset. This visualization helps identify the general salary range and the presence of any skewness or outliers.
+
+<img width="1351" height="438" alt="Screenshot (122)" src="https://github.com/user-attachments/assets/e27f1ca7-8c03-4634-b16f-957b6bba1a96" />
+
+---
+
+### Salary by Experience Level
+
+A comparison of salaries across different **experience levels** was performed using box plots. This visualization helps illustrate how salary changes with increasing experience.
+
+<img width="1348" height="428" alt="Screenshot (125)" src="https://github.com/user-attachments/assets/7cc84041-ae39-4016-9be7-cdcd3b6bbc00" />
+
+---
+
+### Salary by Work Arrangement
+
+A visualization was created to compare salaries across different work arrangements such as **remote, hybrid, and onsite positions**. This helps evaluate whether remote work influences salary levels.
+
+---
+
+### Relationship Between Experience and Salary
+
+A scatter plot was used to analyze the relationship between **minimum experience years** and **salary_avg_usd**. This visualization helps identify whether salary tends to increase with additional experience.
+
+---
+
+### Frequency of Job Titles
+
+A bar chart was created to examine the frequency distribution of job titles in the dataset. This helps identify the most common roles included in the data.
+
+<img width="1351" height="426" alt="Screenshot (124)" src="https://github.com/user-attachments/assets/8c52af9c-5d56-4455-8c15-359fd93079a1" />
+
+---
 
 ## **Key Insights**
 
