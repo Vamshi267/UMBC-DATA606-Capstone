@@ -10,7 +10,7 @@
 
 **GitHub Repository:** https://github.com/Vamshi267/UMBC-DATA606-Capstone/tree/master
 
-**LinkedIn Profile:** *To be added*
+**LinkedIn Profile:** https://www.linkedin.com/in/rajavamshi-goud-amaragoni-93a105345
 
 **PowerPoint Presentation:** *To be added*
 
