@@ -313,6 +313,15 @@ Most important predictors:
 
 ---
 
+---
+
+## **Residual Analysis**
+
+Residual analysis is the process of examining the errors (residuals) of a model, where a residual is the difference between the actual value and the predicted values.
+<img width="1348" height="450" alt="Residual Analysis" src="https://github.com/user-attachments/assets/f8c363e2-541a-47a7-8ca2-b26aa7d15353" />
+
+---
+
 # **6. Application of the Trained Models**
 
 A **Streamlit web application** was developed to make the model interactive.
@@ -332,12 +341,11 @@ A **Streamlit web application** was developed to make the model interactive.
 
 ---
 
-## 📸 **Add Images Here**
+## **User Interface**
 
-Insert:
+<img width="1812" height="945" alt="Screenshot (158)" src="https://github.com/user-attachments/assets/fffd31df-bd08-4e86-935a-325a4d00583b" />
 
-* Streamlit input screen
-* Prediction output screen
+<img width="1895" height="996" alt="Screenshot (159)" src="https://github.com/user-attachments/assets/6b08fd01-4573-4a90-973e-c2cd835ec80d" />
 
 ---
 
