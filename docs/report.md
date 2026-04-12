@@ -12,7 +12,7 @@
 
 **LinkedIn Profile:** https://www.linkedin.com/in/rajavamshi-goud-amaragoni-93a105345
 
-**PowerPoint Presentation:** *To be added*
+**PowerPoint Presentation:** https://github.com/Vamshi267/UMBC-DATA606-Capstone/blob/master/docs/Presentation.pptx
 
 **YouTube Video:** *To be added*
 
