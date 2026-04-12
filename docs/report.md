@@ -211,129 +211,170 @@ The dataset is **tidy**:
 
 ### **Linear Regression**
 
-A baseline model that assumes a linear relationship between features and salary. It is simple, interpretable, and computationally efficient.
+Linear Regression was used as the baseline model for this project. It assumes that the relationship between the input features and the target variable follows a linear pattern. The model estimates coefficients for each predictor and uses them to calculate the expected salary value. Linear Regression is widely used because it is simple, fast to train, easy to interpret, and provides a strong benchmark for comparison with more advanced algorithms.
 
 ### **Random Forest Regressor**
 
-An ensemble model that builds multiple decision trees and combines their predictions. It captures non-linear relationships and reduces overfitting.
+Random Forest Regressor is an ensemble learning method that combines the predictions of multiple decision trees. Each tree is trained on a random subset of the data and features, and the final prediction is obtained by averaging all trees. This approach reduces overfitting, improves generalization, and captures non-linear relationships between variables. It is especially useful when feature interactions are complex and not purely linear.
 
 ### **Gradient Boosting Regressor**
 
-A sequential ensemble model that improves predictions by correcting previous errors. It is highly effective for structured datasets.
+Gradient Boosting Regressor is a sequential ensemble model that builds weak learners one after another, where each new model focuses on correcting the errors made by the previous model. Instead of averaging independent trees, it gradually improves performance through iterative learning. This algorithm is highly effective for structured tabular datasets and often provides strong predictive accuracy when properly tuned.
 
 ---
 
 ## **Training Process**
 
-* Train-test split: **80% / 20%**
-* Training data: 40,000 records
-* Testing data: 10,000 records
-* One-hot encoding applied to categorical variables
+The dataset was prepared and divided into two subsets to evaluate the model fairly on unseen data.
+
+* **Train-Test Split:** 80% / 20%  
+* **Training Data:** 40,000 records used to train the models  
+* **Testing Data:** 10,000 records used to evaluate final performance  
+* **Encoding:** One-hot encoding was applied to categorical variables such as job title, country, experience level, remote type, and company size.
+
+This process ensures that the models learn patterns from historical data while being tested on separate records to measure generalization performance.
 
 ---
 
 ## **Libraries Used**
 
-* pandas
-* numpy
-* plotly
-* scikit-learn
-* joblib
+The following Python libraries were used during model development and deployment:
+
+* **pandas** – Data loading, cleaning, transformation, and analysis  
+* **numpy** – Numerical computations and array operations  
+* **plotly** – Interactive visualizations for exploratory analysis  
+* **scikit-learn** – Machine learning models, preprocessing, evaluation, and hyperparameter tuning  
+* **joblib** – Saving and loading trained models for deployment  
 
 ---
 
 ## **Evaluation Metrics**
 
-### **MAE**
+To compare model performance objectively, three regression metrics were used.
 
-Measures average prediction error in USD.
+### **MAE (Mean Absolute Error)**
+
+MAE measures the average absolute difference between the actual salary and the predicted salary. It shows how far predictions are from true values on average and is easy to interpret because it uses the same unit as the target variable (USD). Lower MAE indicates better prediction accuracy.
+
 <img width="1378" height="449" alt="Mean Absolute Error" src="https://github.com/user-attachments/assets/e04a6e49-3523-4235-a922-e773b243305d" />
 
+### **RMSE (Root Mean Squared Error)**
 
-### **RMSE**
+RMSE calculates the square root of the average squared prediction errors. Because errors are squared before averaging, larger mistakes receive more penalty than smaller ones. This makes RMSE useful when large prediction errors are especially undesirable.
 
-Penalizes larger errors more heavily.
 <img width="1366" height="463" alt="RMSE" src="https://github.com/user-attachments/assets/e4b37797-34ed-49c8-8531-b35c3ed87820" />
 
+### **R² Score (Coefficient of Determination)**
 
-### **R² Score**
+R² Score measures how well the model explains the variation in the target variable. Its value typically ranges from 0 to 1, where values closer to 1 indicate stronger explanatory power and better overall fit.
 
-Measures how well the model explains variance.
 <img width="1374" height="496" alt="R2 score" src="https://github.com/user-attachments/assets/572259a4-10fa-46fa-8322-4fd8ae3a8f45" />
-
 
 ---
 
 ## **Model Performance**
 
 | Model             | MAE  | RMSE | R²     |
-| ----------------- | ---- | ---- | ------ |
+|------------------|------|------|--------|
 | Linear Regression | 3522 | 4222 | 0.9869 |
 | Random Forest     | 3786 | 4592 | 0.9846 |
 | Gradient Boosting | 3522 | 4222 | 0.9869 |
+
+### **Performance Interpretation**
+
+The results show that all three models performed strongly, indicating that the selected features were highly informative for salary prediction. Linear Regression and Gradient Boosting achieved the best results with the lowest error values and highest R² score. Random Forest also performed well but showed slightly higher prediction errors.
 
 ---
 
 ## **Model Selection**
 
-Gradient Boosting was selected because:
+Gradient Boosting Regressor was selected as the final model because it offered strong predictive performance and robust learning behavior.
 
-* Captures complex feature interactions
-* Handles non-linear relationships
-* Provides stable and high accuracy
-* Suitable for structured tabular data
+**Reasons for selection:**
+
+* Captures complex feature interactions effectively  
+* Handles non-linear relationships better than simple linear models  
+* Provides stable and consistent results  
+* Performs well on structured tabular datasets  
+* Suitable for further optimization through hyperparameter tuning  
+
+Although Linear Regression produced nearly identical results, Gradient Boosting was preferred because of its ability to model more complex patterns when scaling to richer datasets.
 
 ---
 
 ## **Hyperparameter Tuning**
 
-Performed using **GridSearchCV**
+To further optimize the selected model, hyperparameter tuning was performed using **GridSearchCV**, which systematically tests multiple parameter combinations and selects the best configuration based on cross-validation performance.
 
-Best parameters:
+### **Best Parameters Found**
 
-* n_estimators = 200
-* learning_rate = 0.05
-* max_depth = 3
+* `n_estimators = 200`  
+* `learning_rate = 0.05`  
+* `max_depth = 3`
 
-Performance improvement was minimal, indicating the model was already near optimal.
+### **Interpretation**
+
+The tuned model showed only minimal improvement over the default version. This indicates that the original model configuration was already performing near its optimal level for the available dataset.
 
 ---
 
 ## **Feature Importance**
 
-Most important predictors:
+Feature importance analysis was performed to identify which predictors had the strongest influence on salary estimation.
 
-* Senior experience level
-* Years of experience
-* Mid-level experience
+### **Most Important Predictors**
 
----
+* Senior experience level  
+* Years of experience  
+* Mid-level experience  
+
+### **Insight**
+
+The results confirm that professional experience is the most influential factor in salary determination. As seniority and experience increase, predicted salary also tends to increase significantly.
 
 ---
 
 ## **Residual Analysis**
 
-Residual analysis is the process of examining the errors (residuals) of a model, where a residual is the difference between the actual value and the predicted values.
+Residual analysis examines the prediction errors of the model, where:
+
+**Residual = Actual Salary − Predicted Salary**
+
+It is used to evaluate whether the model errors are random and unbiased.
+
 <img width="1348" height="450" alt="Residual Analysis" src="https://github.com/user-attachments/assets/f8c363e2-541a-47a7-8ca2-b26aa7d15353" />
+
+### **Interpretation**
+
+A well-performing model should produce residuals that are randomly distributed around zero without clear patterns. This suggests that the model is not consistently overestimating or underestimating salaries. In this project, residual analysis indicated a balanced fit and reliable prediction behavior.
 
 ---
 
 # **6. Application of the Trained Models**
 
-A **Streamlit web application** was developed to make the model interactive.
+To make the model practical and user-friendly, a web application was developed using **Streamlit**. This allows users to interact with the trained model without writing code.
 
 ## **Application Functionality**
 
-* Users input job details
-* Model predicts salary in real-time
-* Simple and user-friendly interface
+The application accepts user inputs related to job characteristics and instantly returns a predicted annual salary.
+
+Users can provide:
+
+* Job title  
+* Country  
+* Experience level  
+* Years of experience  
+* Work type  
+* Company size  
+
+After submitting the inputs, the trained model processes the data and generates a salary estimate in real time.
 
 ## **Workflow**
 
-1. User inputs features
-2. Data is preprocessed
-3. Model generates prediction
-4. Result is displayed
+1. User enters job details through the interface  
+2. Inputs are preprocessed to match training format  
+3. Trained model generates salary prediction  
+4. Result is displayed with benchmark comparison  
 
 ---
 
@@ -343,45 +384,58 @@ A **Streamlit web application** was developed to make the model interactive.
 
 <img width="1895" height="996" alt="Screenshot (159)" src="https://github.com/user-attachments/assets/6b08fd01-4573-4a90-973e-c2cd835ec80d" />
 
+### **Benefits of the Application**
+
+* Easy to use for non-technical users  
+* Real-time salary estimation  
+* Demonstrates practical deployment of machine learning  
+* Can be extended for business or recruitment use cases  
+
 ---
 
 ## **Tools Used**
 
-* Streamlit
-* Joblib
+* **Streamlit** – Front-end web application framework  
+* **Joblib** – Loading saved trained model files  
 
 ---
 
 # **7. Conclusion**
 
-This project successfully developed a machine learning model to predict salaries for AI and Data Science roles.
+This project successfully developed and evaluated machine learning models for predicting salaries in AI and Data Science roles using a large real-world dataset.
 
-Gradient Boosting achieved the best performance with high accuracy and stability. The analysis showed that experience level and years of experience are the most significant factors influencing salary.
+Among the tested models, Gradient Boosting achieved the best overall performance with high predictive accuracy and stable results. The findings also showed that experience level and years of experience are the most important variables influencing salary.
+
+The project demonstrates how machine learning can transform raw job market data into practical insights and useful decision-support tools.
 
 ## **Applications**
 
-* Salary benchmarking
-* Job market insights
-* Hiring decisions
+* Salary benchmarking for job seekers  
+* Compensation planning for companies  
+* Job market analysis and workforce insights  
+* Support for hiring and recruitment decisions  
 
 ## **Limitations**
 
-* Limited feature set
-* No external data integration
-* No bias analysis
+* Limited set of input features  
+* No external economic or labor market data included  
+* No fairness or bias assessment performed  
+* Results depend on the quality of available dataset  
 
 ## **Lessons Learned**
 
-* Data quality is critical
-* Feature engineering improves performance
-* Complex models do not always outperform simple ones
+* Data quality has a major impact on model performance  
+* Feature engineering significantly improves predictive accuracy  
+* Simple models can sometimes compete with complex models  
+* Deployment is essential for real-world usability  
 
 ## **Future Work**
 
-* Add more features (skills, education)
-* Use advanced models
-* Improve generalization
-* Deploy production system
+* Add more features such as skills, education, certifications, and industry demand  
+* Use advanced algorithms such as XGBoost or LightGBM  
+* Apply stronger cross-validation strategies  
+* Improve explainability and fairness analysis  
+* Deploy as a production-ready cloud application  
 
 ---
 
