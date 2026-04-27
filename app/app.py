@@ -9,15 +9,11 @@ st.set_page_config(
     layout="wide"
 )
 
-# -----------------------------
 # Load model artifacts
-# -----------------------------
 model = joblib.load("salary_prediction_model.pkl")
 model_columns = joblib.load("model_columns.pkl")
 
-# -----------------------------
 # Custom CSS
-# -----------------------------
 st.markdown("""
     <style>
     .main {
@@ -84,9 +80,7 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-# -----------------------------
 # Header
-# -----------------------------
 st.markdown("""
 <div class="hero-box">
     <div class="hero-title">AI & Data Science Salary Prediction</div>
@@ -96,9 +90,7 @@ st.markdown("""
 </div>
 """, unsafe_allow_html=True)
 
-# -----------------------------
 # Sidebar Inputs
-# -----------------------------
 st.sidebar.header("Enter Job Details")
 
 job_title = st.sidebar.selectbox(
@@ -133,9 +125,7 @@ predict_clicked = st.sidebar.button("Predict Salary", use_container_width=True)
 # Fixed internally, not shown in UI
 posted_year = 2024
 
-# -----------------------------
 # Prepare input
-# -----------------------------
 input_data = pd.DataFrame([{
     "job_title": job_title,
     "country": country,
@@ -154,9 +144,7 @@ for col in model_columns:
 
 input_encoded = input_encoded[model_columns]
 
-# -----------------------------
 # Main Output Area
-# -----------------------------
 st.markdown("### Prediction Result")
 
 c1, c2 = st.columns(2)
