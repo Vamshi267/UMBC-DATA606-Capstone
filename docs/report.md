@@ -4,7 +4,7 @@
 
 **Global AI & Data Science Salary Prediction Using Machine Learning**
 
-**Prepared for UMBC Data Science Master Degree Capstone by Dr. Chaojie (Jay) Wang**
+**Prepared for UMBC Data Science Master Degree Capstone Project(Data 606) by Dr. Chaojie (Jay) Wang**
 
 **Author Name:** Raja Vamshi Goud Amaragoni
 
