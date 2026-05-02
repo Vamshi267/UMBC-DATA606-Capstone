@@ -19,7 +19,7 @@ PowerPoint Presentation:
 [To be added after presentation is created]
 
 Project Demonstration Video:
-[To be added after project demo video is recorded]
+https://youtu.be/CNcNwNXGFRY
 
 ---
 
