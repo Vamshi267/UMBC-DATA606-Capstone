@@ -16,7 +16,7 @@ LinkedIn Profile:
 [https://www.linkedin.com/in/rajavamshi-goud-amaragoni-93a105345](https://www.linkedin.com/in/rajavamshi-goud-amaragoni-93a105345)
 
 PowerPoint Presentation:
-[To be added after presentation is created]
+https://github.com/Vamshi267/UMBC-DATA606-Capstone/blob/master/docs/Presentation.pptx
 
 Project Demonstration Video:
 https://youtu.be/CNcNwNXGFRY
