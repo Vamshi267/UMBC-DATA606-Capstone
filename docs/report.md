@@ -14,7 +14,7 @@
 
 **PowerPoint Presentation:** https://github.com/Vamshi267/UMBC-DATA606-Capstone/blob/master/docs/Presentation.pptx
 
-**YouTube Video:** *To be added*
+**YouTube Video:** https://youtu.be/CNcNwNXGFRY
 
 ---
 
